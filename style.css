@@ -35,23 +35,34 @@ header, footer {
 .left-aside {
     grid-row: 2 / 4;
     background-color: rgb(100, 167, 100);
-    width: 300px;
+    width: 400px;
 }
 
 article {
     display: flex;
-    justify-content: center;
     grid-column: 3 / 4;
     background-color: brown;
-    width: 600px;
-    height: 620px;
-    align-items: center;
     flex-direction: column;
-    
+}
+
+.article--text {
+    justify-content: center;
+}
+
+.article--images {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.container--article {
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
 }
 
 img {
     display: flex;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
