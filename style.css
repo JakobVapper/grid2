@@ -1,0 +1,27 @@
+
+
+.container {
+    display: grid;
+    background-color: pink;
+    grid-template-columns: minmax(100px, 300px) qfr minmax(100px, 300px);
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1rem;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+
+
+header, footer {
+    grid-column: 1 / 4;
+}
+
+
+
+article {
+    grid-column: 3 / 4;
+    background-color: brown;
+    width: 750px;
+    height: 500px;    
+}
+
