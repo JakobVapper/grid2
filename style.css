@@ -2,6 +2,8 @@
     margin: 30px;
     padding: 0;
     box-sizing: border-box;
+    font-size: 25px;
+    color: white;
 }
 
 .container {
@@ -9,8 +11,8 @@
     background-color: pink;
     grid-template-columns: minmax(100px, 300px) qfr minmax(100px, 300px);
     grid-template-rows: auto auto 1fr auto;
-    gap: 1rem;
     min-height: 100vh;
+    gap: 10px;
     padding: 1rem;
 }
 
@@ -18,17 +20,32 @@ header,
 footer,
 article, aside {
     padding: 1rem;
-    border: 1px solid gray
+    border: 1px solid gray;
+    text-align: center;
 }
 
 header, footer {
     grid-column: 1 / 4;
+    background-color: rgb(135, 208, 61); 
 }
 
 .left-aside {
     grid-row: 2 / 4;
+    background-color: rgb(100, 167, 100);
 }
 
 article {
+    display: flex;
+    justify-content: center;
     grid-column: 3 / 4;
+    background-color: brown;
+    width: 750px;
+    height: 530px;
+}
+
+img {
+    display: flex;
+    align-items: flex-start;
+    height: 150px;
+    width: 200px;
 }
